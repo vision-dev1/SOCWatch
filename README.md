@@ -3,6 +3,7 @@
 ![SOCWatch Badge](https://img.shields.io/badge/Security-SOCWatch-red)
 ![Python Badge](https://img.shields.io/badge/Made%20with-Python-blue)
 ![License Badge](https://img.shields.io/badge/license-MIT-blue.svg)
+
 **A lightweight, SOC-style SIEM Log Analyzer designed for detection engineering and security monitoring.**
 
 SOCWatch simulates how a real Security Operations Center (SOC) analyzes logs by ingesting, parsing, correlating, and generating alerts from multiple log sources. It is built to demonstrate detection engineering concepts, log analysis techniques, and threat correlation.
