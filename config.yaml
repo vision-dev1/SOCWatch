@@ -1,0 +1,44 @@
+# SOCWatch Configuration File
+# Detection thresholds and alert settings
+
+detection:
+  brute_force:
+    failed_attempts_threshold: 5
+    time_window_seconds: 300
+    
+  scanning:
+    error_404_threshold: 10
+    time_window_seconds: 60
+    
+  request_rate:
+    request_threshold: 50
+    time_window_seconds: 60
+    
+  failed_to_success:
+    failed_attempts_before_success: 3
+    time_window_seconds: 600
+
+severity:
+  low:
+    description: "Single suspicious behavior detected"
+  medium:
+    description: "Repeated suspicious activity from single source"
+  high:
+    description: "Cross-source correlation or failed-to-success pattern"
+  critical:
+    description: "Multiple high-confidence indicators across services"
+
+correlation:
+  cross_source_multiplier: 1.5
+  min_confidence_score: 0.6
+
+output:
+  terminal_colors: true
+  json_export: true
+  summary_report: true
+  output_directory: "output"
+
+log_sources:
+  auth_log: "sample_logs/auth.log"
+  ssh_log: "sample_logs/ssh.log"
+  apache_log: "sample_logs/apache_access.log"
