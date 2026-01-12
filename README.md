@@ -128,6 +128,6 @@ Generated in `output/summary_TIMESTAMP.txt`, providing a high-level overview for
 ## 👤 Author
 
 **Created by Vision**
-- GitHub: [https://github.com/vision-dev1](https://github.com/vision-dev1)
+- [Github](https://github.com/vision-dev1)
+- [Portfolio](https://visionkc.com.np)
 
-**License**: MIT LICENSE
